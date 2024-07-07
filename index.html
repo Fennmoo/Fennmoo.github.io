@@ -1,41 +1,51 @@
-<!DOCTYPE html>  
-<html lang="en">  
-<head>  
-    <meta charset="UTF-8">  
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">  
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <title>湾简告</title>  
-    <style>  
-        body {  
-            background-image: url('background.png');
-            background-size: cover;  
-            background-position: center;  
-            background-repeat: no-repeat;  
+<!DOCTYPE html>    
+<html lang="en">    
+<head>    
+    <meta charset="UTF-8">    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>湾水简洁告示栏</title>    
+    <style>    
+        body {    
+            background-image: url('background.png');  
+            background-size: cover;    
+            background-position: center;    
+            background-repeat: no-repeat;    
+        }    
+    
+        /* 移除 img.left-top 中的 display: block; 如果它导致不必要的布局问题 */  
+        /* 但在这个例子中，它通常不会导致问题 */  
+        img.left-top {    
+            width: 200px;    
+            height: auto;    
+        }    
+    
+        /* 如果需要，可以添加对链接的样式 */  
+        a.image-link {  
+            display: inline-block; /* 如果需要，将链接设置为内联块级元素 */  
+            text-decoration: none; /* 移除下划线（如果需要） */  
         }  
-  
-        img.left-top {  
-            display: block;  
-            width: 200px;  
-            height: auto;  
-        }  
-  
-        h1, h2, h3, p {  
-            text-align: center;
-        }  
-    </style>  
-</head>  
-<body>  
-    <img src="wanshuijituan.png" alt="湾水集团图片" class="left-top">  
-    <br>
-    <br>
-    <h1>欢迎来到湾简告（湾水简练告示栏）</h1>  
-    <h1>Welcome to the Wanshui Briefing</h1>  
-    <br>
-    <br>
-    <br>
-    <br>
-    <h2>——湾水交通告示栏——</h2>  
-    <h3>日期：2024.7.7</h3>  
-    <p>1. 测试文本</p>  
-</body>  
+    
+        h1, h2, h3, p {    
+            text-align: center;  
+        }    
+    </style>    
+</head>    
+<body>    
+    <!-- 使用 <a> 标签包裹 <img> 标签，并设置 href 属性 -->  
+    <a href="https://fennmoo.github.io/wanbriefing/" class="image-link">  
+        <img src="wanshuijituan.png" alt="湾水集团图片" class="left-top">  
+    </a>  
+    <br>  
+    <br>  
+    <h1>欢迎来到湾简告（湾水简洁告示栏）</h1>    
+    <h1>Welcome to the Wanshui Briefing</h1>    
+    <br>  
+    <br>  
+    <br>  
+    <br>  
+    <h2>——湾水交通告示栏——</h2>    
+    <h3>日期：2024.7.7</h3>    
+    <p>1. 测试文本</p>    
+</body>    
 </html>
